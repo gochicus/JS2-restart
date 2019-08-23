@@ -16,7 +16,7 @@ const renderProduct = (title = "Notebook", price = 2000) => {
 
 const renderPage = list => {
     const productsList = list.map(el => renderProduct(el.title, el.price));
-    document.querySelector(`.products`).innerHTML = productsList.join(' ');
+    document.querySelector(`.products`).innerHTML = productsList.join(',');
 };
 
 renderPage(products);
