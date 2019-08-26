@@ -1,0 +1,19 @@
+.background {
+    background-color: blanchedalmond;
+    min-height: 80px;
+    padding: 15px;
+}
+.position {
+    display: flex;
+}
+.justifyContent {
+    justify-content: space-between;
+}
+.align-items {
+    align-items: center;
+}
+.btn-cart {
+    min-width: 40px;
+    max-height: 20px;
+
+}
