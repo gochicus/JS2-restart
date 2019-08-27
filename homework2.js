@@ -57,3 +57,13 @@ class ProductItem {
 const list = new ProductList();
 let check = list.overallPrice;
 alert(check);
+
+class Cart {
+    constructor(product) {
+        this.productList =[]; /Получаемый с сервера список текущих товаров
+        this.curentItmes = []; /текущие товары корзины
+        this.countPrice = 0; /Сумма товаров корзины
+        this._countPrice(); /метод подсчета суммы
+        this._render(); /рендер корзины.
+    }
+}
