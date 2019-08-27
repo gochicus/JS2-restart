@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="burger.js">
+    <fieldset id="sizes">
+        <legend> Размеры</legend>
+        <div>
+        <input type="checkbox" id="b-small" name="size" value="small" data-size="small"> <label
+            for="b-small">Маленький</label>
+        </div>
+        <div>
+            <input type="checkbox" id="b-big" name="size" value="big" data-size="big"> <label
+                for="b-big">Большой</label>
+        </div>
+    </fieldset>
+    <fieldset id="topping">
+        <label for="topping">Размеры</label>
+        <div>
+            <input type="checkbox" id="cheese" name="topping" value="cheese" data-size="cheese">
+            <label for="cheese"> Сыр</label>
+        </div>
+        <div>
+            <input type="checkbox" id="salad" name="topping" value="salad" data-size="salad">
+            <label for="salad"> Салат</label>
+        </div>
+        <div>
+            <input type="checkbox" id="potato" name="topping" value="potato" data-size="potato">
+            <label for="potato"> Картошка</label>
+        </div>
+    </fieldset>
+    <fieldset id="spices">
+        <label for="spices">Размеры</label>
+        <div>
+        <input type="checkbox" id="pepper" name="spices" value="small" data-size="small">
+            <label for="pepper">Приправа</label>
+        </div>
+        <div>
+            <input type="checkbox" id="mayonnaise" name="spices" value="big" data-size="big">
+            <label for="mayonnaise">Майонез</label>
+        </div>
+    </fieldset>
+    <button type="submit"> Выбрать</button>
+</form>
+</body>
+</html>
