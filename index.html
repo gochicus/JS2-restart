@@ -3,17 +3,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Store</title>
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="homework1.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
+<div id="app">
 <header>
-    <div></div>
-    <button class="btn-cart" type="button">Корзина</button>
+    <div class="logo">E-shop</div>
+    <div class="cart">
+        <form action="#" class="search-form">
+            <input type="text" class="search-field" v-model="searchLine" v-on:submit="">
+            <button class="btn-search" type="submit" v-on:click="filterGoods()">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+        <button class="btn-cart" type="button">Корзина</button>
+        <div class="cart-block invisible"></div>
+    </div>
 </header>
 <main>
-    <div class="products"></div>
+    <div class="products" v-for="product in products"> <h3>{{product.price}}</h3> <h3>{{product.id_product}}</h3> <h3>{{product.product_name}}</h3> {{imgCatalog}} </div>
 </main>
-<script defer src="homework1.js"></script>
+</div>
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+<script src="homework5.js"></script>
 </body>
 </html>
